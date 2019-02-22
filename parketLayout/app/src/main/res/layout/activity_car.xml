@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityCar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/main1"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_directions_car_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main1"
+        android:background="@drawable/textfield_background"
+        android:layout_margin="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/smain1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Make and Model"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/item1"
+                android:textColor="@color/colorBlack"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter name"
+                android:background="@color/colorWhite"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                app:met_baseColor="@color/colorBlack"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                android:layout_below="@+id/item1"
+                app:met_textColorHint="@color/colorGray"
+                app:met_primaryColor="@color/colorPrimary"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smain1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/smain2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20sp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/item2"
+                    android:textColor="@color/colorBlack"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Color"
+                    android:background="@color/colorWhite"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    android:layout_below="@+id/item2"
+                    app:met_textColorHint="@color/colorGray"
+                    app:met_primaryColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/smain3"
+                android:layout_below="@id/smain2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Number Plate"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20sp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/item3"
+                    android:textColor="@color/colorBlack"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="GJ 06 XXXX"
+                    android:background="@color/colorWhite"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    android:layout_below="@+id/item3"
+                    app:met_textColorHint="@color/colorGray"
+                    app:met_primaryColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.leinardi.android.speeddial.SpeedDialView
+            android:id="@+id/speedDial"
+            android:layout_width="150dp"
+            android:layout_height="150sp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="200sp"
+            app:sdMainFabClosedSrc="@drawable/ic_add_black_24dp" />
+    </RelativeLayout>
+</RelativeLayout>
